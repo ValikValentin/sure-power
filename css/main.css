@@ -313,7 +313,7 @@ nav{
 	margin-top: 30px;
 	margin-right: 3px;
 	margin-bottom: 15px;
-	padding:17px 30px 17px 27px;
+	padding: 17px 30px 17px 27px;
 	border-radius: 4px;
 	font-weight: 700;
 	border: 1px solid #e8b2b6;
@@ -724,8 +724,12 @@ nav{
 }
 
 @media screen and (max-width: 1150px ) {
-	.phone{
+	/*.phone{
 		display: none;
+	}*/
+
+	.conteiner{
+	width: 90%;
 	}
 
 	.slider{
@@ -741,18 +745,24 @@ nav{
 	margin-left: 5px;
 	width: 2%;
 	}
+	
+	.contact{
+		padding-right: 10px;
+	}
+
+	.icon{
+		float: left;
+	}
 
 }
 
 @media screen and (max-width: 1070px ){
 	
-	.conteiner{
-	width: 90%;
-	}
+	
 
-	.contact{
+	/*.contact{
 		display: none;
-	}
+	}*/
 
 	.block-survey{
 		padding-left: 0;
@@ -868,6 +878,10 @@ nav{
 	font-size: 16px;
 	}		
 
+	.application img {
+ 		padding-top: 45px;
+ 	}
+
 
 }
 
@@ -903,8 +917,7 @@ nav{
 	.contact-nav li{
 		margin-right: 15px;
 	}
-	
-	
+		
 	.icon li{
 	padding-right: 15px
 	}
@@ -931,6 +944,10 @@ nav{
 
  	.text-application, .site-survey{
  		font-size: 20px;
+ 	}
+
+ 	.application img {
+ 		padding-top: 50px;
  	}
 	
 	.power-sales{
