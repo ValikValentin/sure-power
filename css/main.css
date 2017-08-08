@@ -65,12 +65,12 @@ ul li{
 	clear:both;
 }
 
-.conteiner{
+.container{
 	width: 82%;
 	margin:0 auto;
 }
 
-.white{
+.color-bg{
 	background: #fff;
 }
 
@@ -215,7 +215,7 @@ nav{
 
 .menu li{
 	float: left;
-	padding: 23px 9px 21px 21px;
+	padding: 23px 15px 21px 15px;
 	text-transform: uppercase;
 	font-size: 16px;
 /*	font-size: 1VW;*/
@@ -233,7 +233,7 @@ nav{
 	transition: all .4s;
 }
 
-.menu li:hover{
+.menu li:hover, .active{
 	-webkit-box-shadow: inset 0 -6px 0 #bd2631;
 	box-shadow: inset 0 -6px 0 #bd2631;
 }
@@ -560,12 +560,14 @@ nav{
 }
 
 .info-place{
+	background-color: #bd2631;
 	width: 20%;
 	text-align:center;
 	font-size: 18px;
 	font-weight: 500;
 	padding: 25px 0 22px 0;
 	color: #fff;
+	
 }
 
 .text-adaptiv{
@@ -578,6 +580,7 @@ nav{
 .partner{
 	margin-top: -8px;
 	text-align: center;
+	margin: 0 auto;
 }
 
 .partner-im{
@@ -629,6 +632,8 @@ nav{
 	box-sizing: border-box;
 }
 
+
+
 .posts{
 	width: 25%;
 	padding-left: 35px;
@@ -646,6 +651,8 @@ nav{
 	display: inline-block;
 	box-sizing: border-box;
 }
+
+
 
 .contact-info{
 	width: 25%;
@@ -723,6 +730,16 @@ nav{
 
 }
 
+@media screen and (max-width: 1310px ) {
+		.info li{
+			display: block;
+			padding-right: 0;
+		}
+
+
+}
+
+
 @media screen and (max-width: 1150px ) {
 	/*.phone{
 		display: none;
@@ -754,6 +771,18 @@ nav{
 		float: left;
 	}
 
+	.partner{
+	margin-top: -8px;
+	text-align: center;
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
+	.partner-im{
+		padding: 30px 30px  30px 0px;
+	}
+
+
 }
 
 @media screen and (max-width: 1070px ){
@@ -777,6 +806,29 @@ nav{
 		margin-bottom: 20px;
 	}
 
+	.logo, .item {
+	float:none;
+	display: inline-block;
+	}
+
+	.logo{
+		padding-right: 40px;
+	}
+
+	.service{
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+
+	.header-bottom, .service {
+		text-align: center;
+	}
+	
+
+	.service{
+		display: block;
+	}
+
 	.title-footer{
 		padding-top: 50px;
 	}
@@ -793,34 +845,12 @@ nav{
 	.slider{
 		height: 550px;
 	}
-
+		
+	.application img {
+ 		padding-top: 45px;
+ 	}
 
 	
-}
-
-@media screen and (max-width: 920px ){
-	.logo, .item {
-		float:none;
-		display: inline-block;
-		}
-
-		.logo{
-			padding-right: 40px;
-		}
-
-	.service{
-		margin-top: 0px;
-		margin-bottom: 20px;
-	}
-
-	.header-bottom, .service {
-		text-align: center;
-	}
-	
-
-	.service{
-		display: block;
-	}
 }
 
 
@@ -870,20 +900,21 @@ nav{
 
 		.slider-h3{
 	font-size: 24px
-	}		
+	}	
+
 		.slider-h2{
 	font-size: 18px;
 	}		
+
 		.slider-p{
 	font-size: 16px;
 	}		
 
-	.application img {
- 		padding-top: 45px;
- 	}
+	
 
 
 }
+
 
 
 @media screen and (max-width: 720px ){
@@ -921,6 +952,10 @@ nav{
 	.icon li{
 	padding-right: 15px
 	}
+
+	.safe .info-im{
+	padding-top: 50px;
+}
 
 }
 
